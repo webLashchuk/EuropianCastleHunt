@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk" class="page">
+<include src="./html/_head.html" locals='{"title": "Tours"}'></include>
+
+<body class="page__body">
+  <div class="site-container">
+
+    <include src="./html/_header.html" locals='{"page": "tours"}'></include>
+
+    <main class="main">
+
+      <include src="./html/_hero.html">
+        {
+        "class":"",
+        "image":"tours/hero.jpg",
+        "subTitle":"Our Tours",
+        "title":"Discover Europe's Majestic Castles"
+        }
+      </include>
+
+      <include src="./html/_tours-list.html">
+        {
+        "imgFirst":"bavaria.jpg",
+        "titleFirst":"Bavaria",
+        "linkFirst":"#bavarian",
+        "imgSecond":"france.jpg",
+        "titleSecond":"France",
+        "linkSecond":"#french",
+        "imgThird":"scotland.jpg",
+        "titleThird":"Scotland",
+        "linkThird":"#scottish"
+        }
+      </include>
+
+      <include src="./html/tours/_article.html">
+        {
+        "id":"bavarian",
+
+        "title":"Bavarian Castle Adventure",
+
+        "dayFirst":"Day 1: Arrival in Munich - Transfer to your luxury hotel in the city. Welcome dinner at a local
+        Bavarian restaurant.",
+
+        "daySecond":"Day 2: Full-day tour of Neuschwanstein Castle - Explore the iconic fairy-tale castle and enjoy a
+        scenic hike in the surrounding mountains.",
+
+        "dayThird":"Day 3: Hohenschwangau Castle Visit - Discover the history of King Ludwig II with a guided tour.
+        Afternoon at leisure.",
+
+        "dayFourth":"Day 4: Visit to Linderhof Palace - Tour the lavish palace and its beautiful gardens, followed by a
+        relaxing afternoon at Lake Starnberg.",
+
+        "dayFifth":"Day 5: Rothenburg ob der Tauber - Visit the well-preserved medieval town, explore its castle and
+        historic sites.",
+
+        "daySixth":"Day 6: Spa and Relaxation Day - Indulge in a spa treatment, or enjoy the hotel amenities.",
+
+        "daySeventh":"Day 7: Departure - Transfer to Munich Airport.",
+
+        "imageBig":"bavarian-big.jpg",
+
+        "imageSmall":"bavarian-small.jpg",
+
+        "infoFifth":"Scenic hiking gear and spa treatment.",
+
+        "infoSixth":"Complimentary wine tasting."
+        }
+      </include>
+
+      <include src="./html/tours/_article.html">
+        {
+        "id":"french",
+
+        "title":"French Chateau Journey",
+
+        "dayFirst":"Day 1: Arrival in Paris - Transfer to your luxury hotel. Welcome dinner with a view of the Eiffel
+        Tower.",
+
+        "daySecond":"Day 2: Full-day tour of Château de Versailles - Explore the opulent palace and its magnificent
+        gardens.",
+
+        "dayThird":"Day 3: Loire Valley Castles - Visit Château de Chambord and Château de Chenonceau. Afternoon at
+        leisure.",
+
+        "dayFourth":"Day 4: Château de Fontainebleau - Guided tour of the historic chateau and its forested park.",
+
+        "dayFifth":"Day 5: Normandy Castles - Explore the castles of Falaise and Caen, with a special focus on their
+        medieval history.",
+
+        "daySixth":"Day 6: Spa and Relaxation Day - Indulge in a spa treatment, or enjoy the hotel amenities.",
+
+        "daySeventh":"Day 7: Departure - Transfer to Paris Airport.",
+
+        "imageBig":"french-big.jpg",
+
+        "imageSmall":"french-small.jpg",
+
+        "infoFifth":"Scenic picnic gear and spa treatment.",
+
+        "infoSixth":"Complimentary gourmet dinner."
+        }
+      </include>
+
+      <include src="./html/tours/_article.html">
+        {
+        "id":"scottish",
+
+        "title":"Scottish Castle Exploration",
+
+        "dayFirst":"Day 1: Arrival in Edinburgh - Transfer to your luxury hotel. Welcome dinner at a historic Scottish
+        inn.",
+
+        "daySecond":"Day 2: Full-day tour of Edinburgh Castle - Explore the iconic castle and its panoramic views of the
+        city.",
+
+        "dayThird":"Day 3: Stirling Castle Visit - Discover the history of Scotland’s kings and queens with a guided
+        tour. Afternoon at leisure.",
+
+        "dayFourth":"Day 4: Visit to Urquhart Castle - Tour the ruins overlooking Loch Ness, followed by a boat cruise
+        on the loch.",
+
+        "dayFifth":"Day 5: Dunnottar Castle - Explore the dramatic cliffside ruins and enjoy a coastal hike.",
+
+        "daySixth":"Day 6: Spa and Relaxation Day - Indulge in a spa treatment, or enjoy the hotel amenities.",
+
+        "daySeventh":"Day 7: Departure - Transfer to Edinburgh Airport.",
+
+        "imageBig":"scottish-big.jpg",
+
+        "imageSmall":"scottish-small.jpg",
+
+        "infoFifth":"Scenic hiking gear and boat cruise.",
+
+        "infoSixth":"Complimentary whiskey tasting."
+        }
+      </include>
+
+      <include src="./html/tours/_offer.html"></include>
+
+      <include src="./html/tours/_testimonials-tours.html"></include>
+
+
+      <include src="./html/_contact.html"></include>
+
+    </main>
+
+    <include src="./html/_footer.html"></include>
+
+  </div>
+</body>
+
+</html>

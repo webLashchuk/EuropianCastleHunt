@@ -1,0 +1,32 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.faq {
+  width: 100%;
+
+  h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: none;
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    background-color: var(--color-gray-200);
+    border-radius: var(--radius-main);
+    padding: 24px 48px;
+
+    @include media(mobile-s) {
+      padding: 20px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,44 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins"as*;
+
+.testimonials {
+  h2 {
+    line-height: 1.4;
+    margin-bottom: 50px;
+  }
+
+  article {
+    background-color: var(--color-gray-200);
+    border-radius: calc(var(--radius-main) - 10px);
+    padding: 60px 90px 60px 45px;
+    height: 100%;
+
+    @include media(tablet) {
+      padding: 30px;
+    }
+
+    p,
+    span {
+      line-height: 1.63;
+      font-size: 18px;
+    }
+
+    span {
+      position: relative;
+      font-weight: var(--fw-700);
+
+      &::before {
+        content: "-";
+        left: 0;
+        top: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  h3 {
+    font-weight: var(--fw-500);
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}

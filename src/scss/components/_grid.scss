@@ -1,0 +1,108 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.grid {
+  $root: &;
+  display: grid;
+
+  &__item {
+    position: relative;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  &[data-items="1"] {
+    --column: 3;
+    gap: 40px;
+    justify-content: space-between;
+    grid-template-columns: repeat(var(--column), 1fr);
+
+    .grid__item {
+      &:nth-child(1) {
+        border-radius: 0 var(--radius-main) var(--radius-main) 0;
+
+        @include media(mobile-l) {
+          border-radius: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        border-radius: var(--radius-main);
+
+        @include media(mobile-l) {
+          border-radius: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        border-radius: var(--radius-main) 0 0 var(--radius-main);
+
+        @include media(mobile-l) {
+          border-radius: 0;
+        }
+      }
+    }
+
+    @include media(tablet) {
+      gap: 20px;
+    }
+
+    @include media(mobile-l) {
+      --column: 1;
+    }
+  }
+
+  &[data-items="2"] {
+    --column: 3;
+    gap: 25px;
+    grid-template-columns: repeat(var(--column), 1fr);
+
+    @include media(tablet) {
+      gap: 15px;
+    }
+
+    @include media(mobile-l) {
+      --column: 2;
+    }
+
+    @include media(mobile-s) {
+      gap: 10px;
+    }
+  }
+
+  &[data-items="3"] {
+    --column: 2;
+    gap: 50px;
+    grid-template-columns: repeat(var(--column), 1fr);
+
+    @include media(tablet) {
+      gap: 15px;
+    }
+
+    @include media(mobile-m) {
+      --column: 1;
+    }
+
+    @include media(mobile-s) {
+      gap: 10px;
+    }
+  }
+
+  &[data-items="4"] {
+    --column: 2;
+    gap: 50px;
+    grid-template-columns: repeat(var(--column), 1fr);
+
+    @include media(tablet) {
+      gap: 15px;
+    }
+
+    @include media(mobile-s) {
+      --column: 1;
+    }
+
+    @include media(mobile-s) {
+      gap: 10px;
+    }
+  }
+}
