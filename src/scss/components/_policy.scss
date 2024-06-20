@@ -26,7 +26,11 @@
 
   &__content {
     &:not(:last-child) {
-      margin-bottom: 65px;
+      margin-bottom: 50px;
+
+      @include media(tablet) {
+        margin-bottom: rem(40);
+      }
     }
   }
 
@@ -76,7 +80,6 @@
   }
 
   @include media(mobile-l) {
-    padding: 130px 0 40px;
 
     h1 {
       font-size: 35px;
